@@ -154,27 +154,32 @@ footer {
     padding-bottom: 126px;
 }
 
+.sm-space {
+    padding-bottom: 24px;
+}
+
 .skill {
     display: grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-gap: 16px;
+    grid-template-columns:repeat(4,1fr);
+    grid-gap: 1rem;
 
-    /* justify-items: center; */
-    align-items: center;
-    padding:0 160px;
+    /* justify-items: center;
+    align-items: center; */
 }
 
 .skill .logo {
-    background-color:rgb(223, 223, 223);
+    background-color:rgb(245, 245, 245);
     border-radius: 8px;
     aspect-ratio:1/1;
+    text-align: center;
 }
 
-.small-links {
-    transition: all 0.3s ease-out 0s;
-    padding: 8px 24px;
+.skill img {
+    max-width: 50%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.small-links:hover {
-    border-bottom: 3px solid black;
+.about {
+    padding: 48px 0;
 }
