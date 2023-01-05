@@ -39,6 +39,7 @@ header {
     align-items: center;
     padding: 64px 0;
     border-bottom: 1px solid black;
+    margin-bottom: 48px;
 }
 
 .nav-links li {
@@ -155,16 +156,34 @@ footer {
 }
 
 .sm-space {
+    padding-bottom: 48px;
+}
+
+.xs-space {
     padding-bottom: 24px;
+}
+
+.personalInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.personalInfo .item-1 {
+    aspect-ratio: 1/1;
+    text-align: center;
+}
+
+.item-2 .contactMe{
+    height: 100%;
+    object-fit: contain;
 }
 
 .skill {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
-
-    /* justify-items: center;
-    align-items: center; */
 }
 
 .skill .logo {
@@ -180,13 +199,14 @@ footer {
     object-fit: contain;
 }
 
-.skillset {
-    padding: 48px 0;
-}
 
 /* mobile view */
 @media screen and (min-width:250px) and (max-width:480px) {
     .skill {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .personalInfo {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -195,6 +215,10 @@ footer {
 @media screen and (min-width:481px) and (max-width:768px) {
     .skill {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .personalInfo {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
