@@ -160,7 +160,7 @@ footer {
 
 .skill {
     display: grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
 
     /* justify-items: center;
@@ -168,9 +168,9 @@ footer {
 }
 
 .skill .logo {
-    background-color:rgb(245, 245, 245);
+    background-color: rgb(245, 245, 245);
     border-radius: 8px;
-    aspect-ratio:1/1;
+    aspect-ratio: 1/1;
     text-align: center;
 }
 
@@ -180,6 +180,27 @@ footer {
     object-fit: contain;
 }
 
-.about {
+.skillset {
     padding: 48px 0;
+}
+
+/* mobile view */
+@media screen and (min-width:250px) and (max-width:480px) {
+    .skill {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Tablet View */
+@media screen and (min-width:481px) and (max-width:768px) {
+    .skill {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Laptop View */
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .skill {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
